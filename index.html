@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Juan Camilo P. · JCamilo__</title>
+  <meta name="description"
+    content="Portafolio de Juan Camilo P., estudiante de Desarrollo de Software en Medellín, Colombia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Young+Serif&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="bar">
+    <a href="#inicio" class="logo">JCamilo_ :)</a>
+    <nav>
+      <a href="#sobre" data-i18n="nav-about">Sobre mí</a>
+      <a href="#proyectos" data-i18n="nav-projects">Proyectos</a>
+      <a href="#contacto" data-i18n="nav-contact">Contacto</a>
+      <button id="lang" type="button">EN</button>
+    </nav>
+  </header>
+
+  <svg class="trail" viewBox="0 0 40 600" preserveAspectRatio="none" aria-hidden="true">
+    <path class="ghost" d="M20 0C5 60 35 120 20 180S5 300 20 360 35 480 20 540 5 580 20 600" />
+    <path class="walk" pathLength="1" d="M20 0C5 60 35 120 20 180S5 300 20 360 35 480 20 540 5 580 20 600" />
+  </svg>
+  <div class="walker" aria-hidden="true"></div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="sun" aria-hidden="true"></div>
+      <h1><span>Juan</span> <span>Camilo</span> <span>P.</span></h1>
+      <p class="handle">JCamilo__</p>
+      <p class="role" data-i18n="role">Estudiante en Desarrollo de Software, amante de la vida, persona de progreso</p>
+      <svg class="hills" viewBox="0 0 1440 300" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#C9D6CC" d="M0 120C200 40 380 60 560 110S980 170 1180 90 1380 60 1440 80V300H0Z" />
+        <path fill="#8FAE7E" d="M0 190C220 120 420 150 640 190S1060 230 1240 160L1440 170V300H0Z" />
+        <path fill="#4E6B45" d="M0 250C260 200 500 240 760 250S1200 220 1440 240V300H0Z" />
+      </svg>
+    </section>
+
+    <section id="sobre">
+      <div class="wrap about">
+        <div class="about-text">
+          <h2 data-i18n="about-h">Sobre mí</h2>
+          <p data-i18n="about-1">Me encanta aprender y engancharme en las cosas, hacerlas con ganas y con pasión y no me rindo aunque las cosas se pongan difíciles. Quiero superarme
+            cada día y construirme como una gran persona. Me gusta progresar personalmente en lo que sé que no soy bueno</p>
+          <p data-i18n="about-2" id="amarillo">Conozco mi potencial y quiero aportar al mundo todos los días: con ganas de vivir la
+            vida, conocer personas y trabajar sumando. Soy muy humano y alegre, como el sol de cada mañana :)</p>
+        </div>
+        <figure class="avatar">
+          <img src="assets/foto.jpg" width="640" height="640" loading="lazy"
+            alt="Juan Camilo sentado de noche frente a las luces de Medellín">
+        </figure>
+      </div>
+    </section>
+
+    <section id="camino">
+      <div class="wrap">
+        <h2 data-i18n="path-h">Educación y experiencia grandes logros de este año...</h2>
+        <ol class="tl">
+          <li>
+            <h3 data-i18n="tl1">Segundo mejor bachiller de mi generación</h3><small>Institución Educativa República de
+              Honduras</small>
+          </li>
+          <li>
+            <h3 data-i18n="tl2">Líder del proyecto de investigación FAN DESK</h3><small data-i18n="tl2s">Prototipo
+              STEM</small>
+          </li>
+          <li>
+            <h3 data-i18n="tl3">Técnica en Desarrollo de Software (en curso)</h3><small>IU Pascual Bravo</small>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="wrap">
+        <h2 data-i18n="proj-h">Proyectos y Soluciones que he brindado</h2>
+        <div class="grid">
+          <article class="card feat">
+            <h3>FAN DESK</h3>
+            <p data-i18n="fan">Ventilador biomimético silencioso. Ganador del semillero de investigación STEM de EPM y
+              primer puesto en Bienestar, Entorno y Comunidad. Lideré el proyecto.</p>
+          </article>
+          <article class="card">
+            <h3>Semillero Quipux</h3>
+            <p data-i18n="quipux">Semillero en Desarrollo de Software - Competencia Beca Salazar y Herrera.</p>
+          </article>
+          <article class="card">
+            <h3>Semillero Pascual Bravo</h3>
+            <p data-i18n="pascual">Semillero de Software e IA de la IU Pascual Bravo.</p>
+          </article>
+          <article class="card">
+            <h3>BiblioLend</h3>
+            <p data-i18n="biblio">Biblioteca virtual de mi proyecto de Media Técnica.</p>
+          </article>
+          <article class="card">
+            <h3>CodeForge Team</h3>
+            <p data-i18n="forge">Equipo indie de trabajo de Media Técnica.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnicas">
+      <div class="wrap">
+        <h2 data-i18n="tech-h">Habilidades técnicas que poseo</h2>
+        <dl class="skills">
+          <div>
+            <dt>
+              <svg class="ico" viewBox="0 0 128 128" aria-hidden="true"><path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"/><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"/><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zM64 88.498l-.059.016-15.317-4.137-.979-10.97H33.816l1.927 21.598 28.198 7.831.059-.017z"/><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z"/></svg>
+              HTML
+            </dt>
+            <dd data-i18n="s-html">Experiencia </dd>
+          </div>
+          <div>
+            <dt>
+              <svg class="ico" viewBox="0 0 128 128" aria-hidden="true"><path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"/><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"/><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"/><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"/><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"/><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.429v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"/></svg>
+              CSS
+            </dt>
+            <dd data-i18n="s-css">Básico</dd>
+          </div>
+          <div>
+            <dt>
+              <svg class="ico" viewBox="0 0 128 128" aria-hidden="true"><rect width="120" height="120" x="4" y="4" rx="10" fill="#F7DF1E"/><text x="118" y="112" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-weight="800" font-size="62" fill="#222">JS</text></svg>
+              JavaScript
+            </dt>
+            <dd data-i18n="s-js">Básico</dd>
+          </div>
+          <div>
+            <dt>
+              <svg class="ico" viewBox="0 0 128 128" aria-hidden="true"><path fill="#5382A1" d="M24 70h68v14c0 22-14 36-34 36S24 106 24 84z"/><path fill="none" stroke="#5382A1" stroke-width="8" stroke-linecap="round" d="M92 76h6c10 0 16 6 16 14s-6 14-18 14h-6"/><path fill="#E76F00" d="M16 118h84v7H16z"/><path fill="none" stroke="#E76F00" stroke-width="6" stroke-linecap="round" d="M44 20c-8 10 8 14 0 24M62 12c-8 12 8 16 0 30M80 22c-8 10 8 14 0 22"/></svg>
+              Java
+            </dt>
+            <dd data-i18n="s-java">Medianamente</dd>
+          </div>
+          <div>
+            <dt>
+              <svg class="ico git" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+              GitHub
+            </dt>
+            <dd data-i18n="s-git">Altos conocimientos: repositorios y proyectos</dd>
+          </div>
+          <div>
+            <dt>
+              <svg class="ico line" viewBox="0 0 128 128" aria-hidden="true"><circle cx="64" cy="40" r="16"/><circle cx="26" cy="54" r="11"/><circle cx="102" cy="54" r="11"/><path d="M36 108c0-18 12-30 28-30s28 12 28 30M8 100c0-12 7-20 18-20M120 100c0-12-7-20-18-20"/></svg>
+              <span data-i18n="s-lead">Liderazgo de proyectos</span>
+            </dt>
+            <dd data-i18n="s-lead-d">Coordinación de equipos y trabajo en grupo</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="blandas">
+      <div class="wrap">
+        <h2 data-i18n="soft-h">Habilidades blandas que son el pilar de mi ser</h2>
+        <ul class="soft">
+          <li data-i18n="b1">Comunicación asertiva</li>
+          <li data-i18n="b2">Paciencia y calma en situaciones complejas</li>
+          <li data-i18n="b3">Diálogo y diplomacia en equipos</li>
+          <li data-i18n="b4">Empatía y análisis de dinámicas sociales y amistad</li>
+          <li data-i18n="b5">Apoyo emocional a las personas</li>
+          <li data-i18n="b6">Respeto, responsabilidad y pasión por aportar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <div class="wrap">
+        <h2 data-i18n="hob-h">Fuera del código me gusta...</h2>
+        <p data-i18n="hob-1">Amo investigar a fondo los temas que me llaman la atención. Eso me dio análisis crítico para
+          detectar errores y detalles en cómo funcionan las cosas, y entender el cómo y el porqué.</p>
+        <p data-i18n="hob-2">Camino y leo en espacios naturales, conozco la ciudad y disfruto los pequeños detalles. Soy
+          muy detallista. La cooperación es mi fuerte me gusta trabajar y solucionar en equipo :)</p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap contact">
+        <h2 data-i18n="con-h">Contactame y conoce mucho más mi</h2>
+        <a href="tel:+573145899535">+57 314 5899535</a>
+        <a href="mailto:juancamilo321312@gmail.com">juancamilo321312@gmail.com</a>
+        <span>Medellín, Colombia</span>
+      </div>
+    </section>
+  </main>
+  <footer>© Juan Camilo Puerta Sepúlveda. - JCamilo_ 2026 </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
